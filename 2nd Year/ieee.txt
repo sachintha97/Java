@@ -1,0 +1,57 @@
+// Don't place your source in a package
+import java.util.Scanner;
+import java.lang.*;
+import java.io.*;
+import java.util.ArrayList;
+
+// Please name your class Main
+class Main {
+    private static int b , x;
+    private static String index;
+    public static void main (String[] args) throws java.lang.Exception {
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter b");
+        b = in.nextInt();
+        System.out.println("enter index");
+        x = in.nextInt();
+        int n=26;
+
+
+            for (int i = 0; i < n*n; ++i) {
+                System.out.print(str(i) + " ");
+                index = str(i);
+            }
+
+            char ch1 = index.charAt(x);
+            System.out.println(ch1);
+        }
+
+
+        public static String str(int i) {
+            return i < 0 ? "" : str((i / b) - 1)+ (char)(65 + i % b);
+        }
+
+
+
+
+
+
+
+        //int i,j;
+        //String [] alphabet = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
+
+        //for (i=0;i<b;i++)
+        /*{
+            System.out.print(alphabet[i]);
+            for (j=i+1;j<b;j++)
+            {
+
+
+                System.out.print(alphabet[i] + alphabet[j]); //concatenation
+            }
+        }*/
+
+
+
+    }
+

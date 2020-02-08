@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Contract_Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fitHeight="628.0" fitWidth="978.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/login.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="427.0" prefWidth="735.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d0aa57" height="513.0" layoutX="21.0" layoutY="12.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="723.0" />
+            <VBox layoutX="23.0" layoutY="63.0" prefHeight="417.0" prefWidth="153.0">
+               <children>
+                  <Label layoutX="10.0" layoutY="40.0" text="Contract ID:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Contract Name:" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Creation Date :" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="40.0" text="Job Type :" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="154.0" text="Description : " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Project Leader ID:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="80.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="180.0" layoutY="63.0" prefHeight="399.0" prefWidth="347.0">
+               <children>
+                  <TextField fx:id="contractId" layoutX="10.0" layoutY="40.0" prefHeight="31.0" prefWidth="311.0" promptText="Contract ID" />
+                  <TextField fx:id="contractName" prefHeight="31.0" prefWidth="311.0" promptText="Contract Name">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="creationDate" promptText="year/month/date">
+                     <VBox.margin>
+                        <Insets top="26.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="jobType" prefHeight="28.0" prefWidth="333.0" promptText="Job Type">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextArea fx:id="Cdescription" prefHeight="72.0" prefWidth="293.0" promptText="Contract Description">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </TextArea>
+                  <TextField fx:id="txteId" prefHeight="31.0" prefWidth="311.0" promptText="Employee Id">
+                     <VBox.margin>
+                        <Insets top="32.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <Label layoutX="252.0" layoutY="24.0" text="Contract Details" textFill="#e3ff46">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAdd" layoutX="554.0" layoutY="87.0" mnemonicParsing="false" onAction="#AddContract" text="ADD">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpdate" layoutX="639.0" layoutY="87.0" mnemonicParsing="false" onAction="#updateContract" text="UPDATE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnView" layoutX="553.0" layoutY="154.0" mnemonicParsing="false" text="VIEW">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnBack" layoutX="661.0" layoutY="449.0" mnemonicParsing="false" onAction="#BackButton" text="BACK">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="553.0" layoutY="273.0" text="Input Records Result" textFill="#21cda8">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <TextArea fx:id="contractResult" layoutX="549.0" layoutY="322.0" prefHeight="92.0" prefWidth="183.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextArea>
+            <Button fx:id="btnDelete" layoutX="639.0" layoutY="154.0" mnemonicParsing="false" onAction="#deleteContract" text="DELETE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Role_Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fitHeight="613.0" fitWidth="946.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/login.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e46464" height="462.0" layoutX="33.0" layoutY="38.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="738.0" />
+            <VBox layoutX="53.0" layoutY="93.0" prefHeight="191.0" prefWidth="121.0">
+               <children>
+                  <Label text="Role ID:" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Hourly Pay: " textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="40.0" text="Role Type : " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="174.0" layoutY="90.0" prefHeight="182.0" prefWidth="305.0">
+               <children>
+                  <TextField fx:id="txtrId" promptText="ID">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="txtpay" layoutX="10.0" layoutY="40.0" promptText="Salary">
+                     <VBox.margin>
+                        <Insets top="33.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="txtrole">
+                     <VBox.margin>
+                        <Insets top="28.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <Label layoutX="251.0" layoutY="46.0" text="Role Details" textFill="#e3ff46">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAdd" layoutX="542.0" layoutY="100.0" mnemonicParsing="false" onAction="#AddRole" text="ADD">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpdate" layoutX="631.0" layoutY="100.0" mnemonicParsing="false" onAction="#updateRole" text="UPDATE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnView" layoutX="542.0" layoutY="164.0" mnemonicParsing="false" text="VIEW ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnBack" layoutX="661.0" layoutY="441.0" mnemonicParsing="false" onAction="#BackButton" text="BACK">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDelete" layoutX="635.0" layoutY="164.0" mnemonicParsing="false" onAction="#deleteRole" text="DELETE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TableView layoutX="48.0" layoutY="272.0" prefHeight="200.0" prefWidth="407.0">
+              <columns>
+                <TableColumn prefWidth="115.0" text="Role ID" />
+                <TableColumn prefWidth="131.0" text="Hourly Pay " />
+                  <TableColumn minWidth="8.0" prefWidth="160.0" text="Role Type" />
+              </columns>
+            </TableView>
+            <TextArea fx:id="roleresult" layoutX="507.0" layoutY="314.0" prefHeight="98.0" prefWidth="214.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextArea>
+            <Label layoutX="507.0" layoutY="271.0" text="Role Input Records Result" textFill="#1111a8">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

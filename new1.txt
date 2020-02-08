@@ -1,0 +1,89 @@
+public class Address {
+    int houseNumber;
+    String street;
+    int apartmentNumber;
+    String city;
+    String state;
+    int postalCode;
+
+    public Address(int houseNumber, String street, String city, String state, int postalCode) {
+        this.houseNumber = houseNumber;
+        this.street = street;
+        this.city = city;
+        this.state = state;
+        this.postalCode = postalCode;
+    }
+
+    public Address(int houseNumber, String street, int apartmentNumber, String city, String state, int postalCode) {
+        this.houseNumber = houseNumber;
+        this.street = street;
+        this.apartmentNumber = apartmentNumber;
+        this.city = city;
+        this.state = state;
+        this.postalCode = postalCode;
+    }
+
+    public void printAddress() {
+        System.out.println(this.street);
+        System.out.println(this.city + " " + this.state + " " + this.postalCode);
+    }
+
+    public boolean comesBefore(Address other) {
+        if (this.postalCode < other.postalCode) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+///////
+
+public class SodaCan {
+    double height;
+    double radius;
+
+    public SodaCan(double height,double radius){
+        this.height = height;
+        this.radius = radius;
+    }
+    public double getSurfaceArea() {
+        double surfaceArea = (2 * Math.PI * this.radius * this.height) + (2 * Math.PI *this.radius *this.radius);
+        return surfaceArea;
+    }
+
+    public double getVolume(){
+        double getVolume = Math.PI * this.radius * this.radius * this.height;
+        return getVolume;
+    }
+}
+
+///3////
+
+public class Car {
+    double fuelEfficiency; //miles per gallon
+    double fuelLevel = 0;
+
+    public Car(Double fuelEfficiency) {
+        this.fuelEfficiency = fuelEfficiency;
+    }
+
+    public void addGas(double fuelLevel){
+        this.fuelLevel = fuelLevel;
+    }
+
+    public void drive(double distance){
+        this.fuelLevel = this.fuelLevel - (distance / this.fuelEfficiency);
+    }
+
+    public double getGasLevel(){
+        return this.fuelLevel;
+    }
+
+    public static void main(String[] args) {
+        Car myHybrid = new Car(50.0);  //50 Miles Per Gallon
+        myHybrid.addGas(20.0);  //Tank 20 Gallons
+        myHybrid.drive(100.0); // Drive 100 Miles
+        System.out.println(myHybrid.getGasLevel()); //Print Fuel Remaining.
+    }
+}

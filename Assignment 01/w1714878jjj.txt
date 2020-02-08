@@ -1,0 +1,127 @@
+Name - Sachintha Amarasiri
+UoW ID - w1714878
+IIT ID - 2018051
+
+Pseudocode
+
+START
+FUNCTION getvalue()
+1.	GET  i, j
+2.	 PROMPT user input size
+3.	    DISPLAY square size
+4.	    GET square size (n)
+5.	 	    IF(n<2)
+6.	 	        DISPLAY invalid message
+7.	 	        CALL get value function
+8.	 	    ELSE
+9.	 		CREATE new 2D array
+10.	 		SET count to 1
+11.	 		FOR (i = 0; i < n; i++)
+12.	 		         FOR (j = 0; j < n; j++)
+13.	 			PROMPT user to input numbers
+14.	 			DISPLAY user input numbers
+15.	 		END FOR
+16.	 		         END FOR
+17.	                           CALL display square function
+18.	 	    END IF
+END FUNCTION 
+
+FUNCTION display square
+1.	 FOR (i = 0; i < n; i++)   
+2.	       FOR (j = 0; j < n; j++)	
+3.	  	PRINT square
+4.	       END FOR
+5.	CALL displayResult
+END FUNCTION
+
+FUNCTON isMagicSquare()
+1.         GET i , j , sum_row,sum_col
+2.         SET sum to 0 and sum_diagonal to 0
+3. 		FOR  (j = 0; j < n; j++)
+4.	 	      CALCULATE sum
+5.	 	END FOR
+6.	  	FOR (i = 1; i < n; i++)
+7.	 	       SET sum_row to 0
+8.	 		FOR (j=0;j<n;j++)
+9.	 		        CALCULATE sum of each row
+10.	 		IF sum_row not equal sum
+11.	 	      	     Return false
+12.	 		END IF
+13.	 	END FOR
+14.	 	FOR  (j = 0; j < n; j++)  
+15.	 	       SET sum_col to 0
+16.	 		FOR (i = 0; i < n; i++)  
+17.	 		        CALCULATE sum of each column
+18.	 		IF sum_col not equal to sum
+19.	 		         Return false
+20.	 		END IF
+21.	 	END FOR
+22.	  	FOR  (i = 0; i < n; i++)
+23.	 	          FOR (j = 0; j < n; j++)
+24.	 		IF (i==j)
+25.	 		       CALCULATE sum of first diagonal
+26.	 		END IF
+27.	            IF sum_diagonal not equal to sum
+28.	 	        Return false
+29.	 	END IF
+30.	  	END FOR
+31.	 	FOR (i = 0; i < n; i++)
+32.	 	        FOR(j = 0; j < n; j++)
+33.	 		IF(i+j == n-1)
+34.	 		      CALCULATE sum of second diagonal
+35.	 		END IF
+36.	 	IF sum_diagonal not equal to sum
+37.	 	         Return false
+38.	 	END IF
+39.	 	END FOR
+40.	 Return true
+END FUNCTION
+
+FUNCTION isLoShuSquare()
+1.         GET I,j
+2.	 	Create new array to store number of times number appear
+3.	 	FOR (number = 1; number < 10; number++)
+4.	 	         SET each frequency to 0 initial
+5.	 	END FOR
+6.	 	FOR (i = 0; i < n; i++)
+7.	 	      FOR (j = 0; j < n; j++)
+8.	 		IF check all values between 1 and 9
+9.	 		        Return false
+10.	 		END IF
+11.	 		Increase frequency
+12.	 	FOR (number = 1; number < 10; number++)
+13.	 		IF check number display more than once
+14.	 	      	      Return false
+15.	 		END IF
+16.	 	END FOR
+17.	  	FOR ( i = 0; i < 3; i++)
+18.	 	       SET sum sum to 0
+19.	 		FOR ( j = 0; j < 3; j++)
+20.	 		       CALCULATE sum
+21.	 			IF sum not equal to 15
+22.	 			     Return false
+23.	 			END IF
+24.	 		END FOR
+25.	 	Return true
+END FUNCTION
+
+FUNCTION dispalayResult()
+1.	PRINT ismagicsquare
+2.	PRINT isloshusquare
+END FUNCTION
+
+FUNCTION main()
+1.	CALL getvalue function
+2.	   SET stop_programme = false
+3.	 	WHILE(!stop_programme)
+4.	 		PROMPT user choice
+5.	 		GET user choice
+6.	 	END WHILE
+END FUNCTION
+END
+
+
+
+SOURCE CODE
+
+

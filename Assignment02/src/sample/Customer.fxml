@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Customer_Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fitHeight="585.0" fitWidth="867.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/login.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0dc962" height="433.0" layoutX="26.0" layoutY="37.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="743.0" />
+            <VBox layoutX="43.0" layoutY="90.0" prefHeight="309.0" prefWidth="137.0">
+               <children>
+                  <Label layoutX="10.0" layoutY="216.0" prefHeight="27.0" prefWidth="143.0" text="Customer ID : " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Name : " textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="E-mail : " textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="40.0" text="Tel.Number:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="40.0" text="Contract IDs : " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="35.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="182.0" layoutY="88.0" prefHeight="246.0" prefWidth="335.0">
+               <children>
+                  <TextField fx:id="customerId" layoutX="10.0" layoutY="219.0" promptText="Custormer ID">
+                     <VBox.margin>
+                        <Insets top="23.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="txtName" promptText=" Name">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="txtCEmail" layoutX="10.0" layoutY="40.0" promptText="E-mail">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="txtCNum" prefHeight="28.0" prefWidth="333.0" promptText="Telephone Number">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <Label layoutX="164.0" layoutY="52.0" text="Customer Details" textFill="#e3ff46">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAdd" layoutX="551.0" layoutY="115.0" mnemonicParsing="false" onAction="#AddCustomer" text="ADD">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpdate" layoutX="641.0" layoutY="115.0" mnemonicParsing="false" onAction="#updateCustomer" text="UPDATE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnView" layoutX="549.0" layoutY="170.0" mnemonicParsing="false" text="VIEW">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnBack" layoutX="677.0" layoutY="409.0" mnemonicParsing="false" onAction="#BackButton" text="BACK">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="cResult" layoutX="532.0" layoutY="274.0" prefHeight="104.0" prefWidth="203.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextArea>
+            <Label layoutX="545.0" layoutY="240.0" text="Input Records Result:" textFill="#722b69">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Button fx:id="btnDelete" layoutX="641.0" layoutY="170.0" mnemonicParsing="false" onAction="#deleteCustomer" text="DELETE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtContractId" layoutX="182.0" layoutY="347.0" prefHeight="31.0" prefWidth="130.0" promptText="Contract ID" />
+            <TextField fx:id="txtContractId2" layoutX="330.0" layoutY="347.0" prefHeight="31.0" prefWidth="130.0" promptText="Contract ID" />
+         </children></AnchorPane>
+   </children>
+</GridPane>
