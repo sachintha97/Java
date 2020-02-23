@@ -5,6 +5,9 @@
  * Using a balance the minimum number of its times determine which coin is the wrong weight.
  * How can you find the fake coin with the minimum number of applications of the balance?
  */
+
+/**
+ * Fake Coin Implementation*/
 import java.util.Random;
 import java.util.Arrays;
 /**
@@ -67,7 +70,8 @@ public class SimpleFakeCoin {
      */
     private int findFakeCoin(Coin[] coins){
         if(coins.length == 0)
-            return -1; // fake coin not found
+            // fake coin not found return -1
+            return -1;
         else if(coins.length == 1)
             return coins[0].getPosition();
         else {
@@ -102,7 +106,7 @@ public class SimpleFakeCoin {
         System.out.println("fake coin is found at position " + fakeCoinPosition);
     }
 
-    // inner class
+    // inner class Coin
     private class Coin {
         double weight;
         int position;
