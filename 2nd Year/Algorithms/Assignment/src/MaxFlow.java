@@ -1,39 +1,39 @@
-// Java program for implementation of Ford Fulkerson algorithm
+/**
+ Assignment - Algorithms:Theory, Design and Implementation
+ Sachintha Amarasiri -w1714878
+ */
+
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 import java.util.LinkedList;
 public class MaxFlow {
 
+        // Number of vertices in graph
+        private static int NumVertice;
 
-        static final int V = 6; //Number of vertices in graph
-
-        /* Returns true if there is a path from source 's' to sink
-        't' in residual graph. Also fills parent[] to store the
-        path */
-        boolean bfs(int rGraph[][], int s, int t, int parent[])
+        // Returns true if there is a path from source(s) to sink(t) in residual graph
+        public boolean breadthFirstSearch(int residualGraph[][], int s, int t, int parent[])
         {
-            // Create a visited array and mark all vertices as not
-            // visited
-            boolean visited[] = new boolean[V];
-            for(int i=0; i<V; ++i)
+            // Create a visited array and mark all vertices as not visited
+            boolean visited[] = new boolean[NumVertice];
+            for(int i=0; i<NumVertice; ++i)
                 visited[i]=false;
 
-            // Create a queue, enqueue source vertex and mark
-            // source vertex as visited
+            // Create a queue, enqueue source vertex and mark source vertex as visited
             LinkedList<Integer> queue = new LinkedList<Integer>();
             queue.add(s);
             visited[s] = true;
             parent[s]=-1;
 
-            // Standard BFS Loop
+            // Standard breadthFirstSearch Loop
             while (queue.size()!=0)
             {
                 int u = queue.poll();
 
-                for (int v=0; v<V; v++)
+                for (int v=0; v<NumVertice; v++)
                 {
-                    if (visited[v]==false && rGraph[u][v] > 0)
+                    if (visited[v]==false && residualGraph[u][v] > 0)
                     {
                         queue.add(v);
                         parent[v] = u;
@@ -42,88 +42,89 @@ public class MaxFlow {
                 }
             }
 
-            // If we reached sink in BFS starting from source, then
-            // return true, else false
+            // If we reached sink in breadthFirstSearch starting from source, then return true
             return (visited[t] == true);
         }
 
-        // Returns tne maximum flow from s to t in the given graph
-        int fordFulkerson(int graph[][], int s, int t)
+        // Returns tne maximum flow from source(s) to sink(t) in the given graph
+        public int fordFulkerson(int graph[][], int s, int t)
         {
             int u, v;
 
-            // Create a residual graph and fill the residual graph
-            // with given capacities in the original graph as
-            // residual capacities in residual graph
+            int residualGraph[][] = new int[NumVertice][NumVertice];
 
-            // Residual graph where rGraph[i][j] indicates
-            // residual capacity of edge from i to j (if there
-            // is an edge. If rGraph[i][j] is 0, then there is
-            // not)
-            int rGraph[][] = new int[V][V];
+            for (u = 0; u < NumVertice; u++)
+                for (v = 0; v < NumVertice; v++)
+                    residualGraph[u][v] = graph[u][v];
 
-            for (u = 0; u < V; u++)
-                for (v = 0; v < V; v++)
-                    rGraph[u][v] = graph[u][v];
-
-            // This array is filled by BFS and to store path
-            int parent[] = new int[V];
+            // This array is filled by breadthFirstSearch and to store path
+            int parent[] = new int[NumVertice];
 
             int max_flow = 0; // There is no flow initially
 
-            // Augment the flow while tere is path from source
-            // to sink
-            while (bfs(rGraph, s, t, parent))
+            // Augment the flow while there is path from source to sink
+            while (breadthFirstSearch(residualGraph, s, t, parent))
             {
-                // Find minimum residual capacity of the edhes
-                // along the path filled by BFS. Or we can say
-                // find the maximum flow through the path found.
+
+                // Find the maximum flow through the path found
                 int path_flow = Integer.MAX_VALUE;
                 for (v=t; v!=s; v=parent[v])
                 {
                     u = parent[v];
-                    path_flow = Math.min(path_flow, rGraph[u][v]);
+                    path_flow = Math.min(path_flow, residualGraph[u][v]);
                 }
 
-                // update residual capacities of the edges and
-                // reverse edges along the path
+
                 for (v=t; v != s; v=parent[v])
                 {
                     u = parent[v];
-                    rGraph[u][v] -= path_flow;
-                    rGraph[v][u] += path_flow;
+                    residualGraph[u][v] -= path_flow;
+                    residualGraph[v][u] += path_flow;
                 }
 
-                // Add path flow to overall flow
+                // Add path flow to max flow
                 max_flow += path_flow;
             }
 
-            // Return the overall flow
+            // Return the max flow
             return max_flow;
         }
 
-        // Driver program to test above functions
+        // Get user input values
+        public void getValue(){
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Enter Number of nodes in graph (6 or more than 6): ");
+            int V = scan.nextInt();
+
+            if(V>= 6) {
+                // User input number of nodes equal to number of vertices
+                NumVertice = V;
+                // Creating new 2D array , graph is represent as a 2D matrix
+                int graph[][] = new int[V][V];
+
+                // Read number for each cell
+                int count = 1;  // Set count to 1
+                for (int i = 0; i < V; i++) {
+                    System.out.print("Enter node " + (count++) + " each edge capacities - ");
+                    for (int j = 0; j < V; j++) {
+                        graph[i][j] = scan.nextInt();
+                    }
+                }
+                MaxFlow m = new MaxFlow();
+
+                System.out.println("The maximum flow is " + m.fordFulkerson(graph, 0, V - 1));
+            }
+            else{
+                System.out.println("Invalid input, enter 6 or more than 6 \ntry again...");
+
+                getValue();
+            }
+        }
+
         public static void main (String[] args) throws Exception
         {
-            // Let us create a graph shown in the above example
-            int graph[][] =new int[][] { {0, 10, 8, 0, 0, 0},
-                    {0, 0, 5, 5, 0, 0},
-                    {0, 4, 0, 0, 10, 0},
-                    {0, 0, 7, 0, 6, 3},
-                    {0, 0, 0, 10, 0, 14},
-                    {0, 0, 0, 0, 0, 0}
-
-//                    {0, 16, 13, 0, 0, 0},
-//                    {0, 0, 10, 12, 0, 0},
-//                    {0, 4, 0, 0, 14, 0},
-//                    {0, 0, 9, 0, 0, 20},
-//                    {0, 0, 0, 7, 0, 4},
-//                    {0, 0, 0, 0, 0, 0}
-            };
-            MaxFlow m = new MaxFlow();
-
-            System.out.println("The maximum flow is " +
-                    m.fordFulkerson(graph, 0, 5));
+            MaxFlow obj = new MaxFlow();
+            obj.getValue();
 
         }
 

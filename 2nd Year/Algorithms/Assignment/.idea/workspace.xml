@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="676ac6eb-313f-468b-b920-c6691699eb57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Merge_Sort/Merge_Sort.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Quick_Sort/Quick_Sort.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment 01/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BinarySearch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BinarySearch/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment/MaxFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment/MaxFlow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MaxFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MaxFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Merge_Sort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge_Sort/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Quick_Sort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Quick_Sort/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Assignment 01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Assignment 01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Assignment 01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Assignment 01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Assignment 01/out/production/Assignment 01/Magic_Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Assignment 01/out/production/Assignment 01/Magic_Square.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,9 +27,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MaxFlow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="1805">
+              <caret line="95" column="81" selection-start-line="95" selection-start-column="81" selection-end-line="95" selection-end-column="81" />
               <folding>
+                <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -51,10 +57,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="979" />
-    <option name="height" value="1049" />
+    <option name="x" value="160" />
+    <option name="y" value="-20" />
+    <option name="width" value="980" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -67,8 +73,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Assignment 01" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -108,11 +116,14 @@
       <updated>1582989312402</updated>
       <workItem from="1582989317213" duration="1441000" />
       <workItem from="1584423271832" duration="1560000" />
+      <workItem from="1584465989968" duration="2298000" />
+      <workItem from="1584511988828" duration="2848000" />
+      <workItem from="1584551905295" duration="2545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3001000" />
+    <option name="totallyTimeSpent" value="10692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -127,7 +138,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.10339943" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22096318" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -156,9 +167,10 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MaxFlow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="1805">
+          <caret line="95" column="81" selection-start-line="95" selection-start-column="81" selection-end-line="95" selection-end-column="81" />
           <folding>
+            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
