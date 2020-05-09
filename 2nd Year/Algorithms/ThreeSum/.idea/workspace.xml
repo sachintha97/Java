@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c0fd388-5536-4c44-84c2-3cfbff92711f" name="Default Changelist" comment="" />
+    <list default="true" id="3c0fd388-5536-4c44-84c2-3cfbff92711f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment/out/production/Assignment/MaxFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment/out/production/Assignment/MaxFlow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment/src/MaxFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment/src/MaxFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Merge_Sort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge_Sort/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Merge_Sort/out/production/Merge_Sort/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge_Sort/out/production/Merge_Sort/MergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Merge_Sort/src/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Merge_Sort/src/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Quick_Sort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Quick_Sort/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Quick_Sort/out/production/Quick_Sort/QuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Quick_Sort/out/production/Quick_Sort/QuickSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Quick_Sort/src/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Quick_Sort/src/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Assignment 01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Assignment 01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Assignment 01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Assignment 01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Assignment 01/out/production/Assignment 01/Magic_Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Assignment 01/out/production/Assignment 01/Magic_Square.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
+            <state relative-caret-position="760">
               <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -29,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StopWatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="54" selection-start-line="10" selection-start-column="14" selection-end-line="13" selection-end-column="54" />
+            <state relative-caret-position="95">
+              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -44,6 +59,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -55,15 +73,15 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="950" />
     <option name="y" value="-10" />
-    <option name="width" value="979" />
-    <option name="height" value="1049" />
+    <option name="width" value="980" />
+    <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -81,12 +99,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Tutorial01/Week 01" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -132,17 +152,17 @@
       <workItem from="1580104532025" duration="3285000" />
       <workItem from="1580649592857" duration="1274000" />
       <workItem from="1580654479412" duration="623000" />
+      <workItem from="1585379599459" duration="204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5182000" />
+    <option name="totallyTimeSpent" value="5386000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="760" y="-8" width="783" height="839" extended-state="0" />
-    <editor active="true" />
+    <frame x="760" y="-8" width="784" height="840" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13969572" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1436464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -180,7 +200,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
+        <state relative-caret-position="760">
           <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -190,8 +210,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StopWatch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="54" selection-start-line="10" selection-start-column="14" selection-end-line="13" selection-end-column="54" />
+        <state relative-caret-position="95">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
         </state>
       </provider>
     </entry>

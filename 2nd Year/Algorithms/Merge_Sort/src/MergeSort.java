@@ -8,11 +8,10 @@ public class MergeSort {
             int n1 = m - l + 1;
             int n2 = r - m;
 
-
             int L[] = new int [n1];
             int R[] = new int [n2];
 
-            //copy data to temp arrays
+            //copy data to arrays
             for (int i=0; i<n1; ++i)
                 L[i] = arr[l + i];
             for (int j=0; j<n2; ++j)
@@ -41,7 +40,7 @@ public class MergeSort {
                 k++;
             }
 
-            //copy remaining elements of L[] if any */
+            //copy remaining elements of L[]
             while (i < n1)
             {
                 arr[k] = L[i];
@@ -49,7 +48,7 @@ public class MergeSort {
                 k++;
             }
 
-            //copy remaining elements of R[] if any
+            //copy remaining elements of R[]
             while (j < n2)
             {
                 arr[k] = R[j];
@@ -87,7 +86,7 @@ public class MergeSort {
 
         public static void main(String args[])
         {
-            int arr[] = {12, 11, 13, 5, 6, 7};
+            int arr[] = {18, 39, 13, 5, 44, 7, 64, 27};
 
             System.out.print("Given Array : ");
             printArray(arr);

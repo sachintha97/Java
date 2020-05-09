@@ -1,15 +1,13 @@
 public class QuickSort {
 
-        /* This function takes last element as pivot,
-        places the pivot element at its correct
-        position in sorted array, and places all
-        smaller (smaller than pivot) to left of
-        pivot and all greater elements to right
-        of pivot */
-        int partition(int arr[], int low, int high)
+        /* takes last element as pivot, places the pivot element at its correct
+        position in sorted array, and places all smaller (smaller than pivot) to left of
+        pivot and all greater elements to right of pivot */
+        public int partition(int arr[], int low, int high)
         {
             int pivot = arr[high];
-            int i = (low-1); // index of smaller element
+            // index of smaller element
+            int i = (low-1);
             for (int j=low; j<high; j++)
             {
                 //if current element is smaller than the pivot
@@ -33,19 +31,18 @@ public class QuickSort {
         }
 
 
-        /* The main function that implements QuickSort()
-        arr[] --> Array to be sorted,
-        low --> Starting index,
-        high --> Ending index */
-        void sort(int arr[], int low, int high)
+        /* the main function that implements QuickSort()
+        arr[] = array to be sorted */
+        public void sort(int arr[], int low, int high)
         {
+            //starting index < ending index
             if (low < high)
             {
 			/* pi is partitioning index, arr[pi] is
 			now at right place */
                 int pi = partition(arr, low, high);
 
-                // Recursively sort elements before
+                // recursively sort elements before
                 // partition and after partition
                 sort(arr, low, pi-1);
                 sort(arr, pi+1, high);
@@ -53,7 +50,7 @@ public class QuickSort {
         }
 
         //a utility function to print array of size n
-        static void printArray(int arr[])
+        public static void printArray(int arr[])
         {
             int n = arr.length;
             for (int i=0; i<n; ++i)
@@ -63,7 +60,7 @@ public class QuickSort {
 
         public static void main(String args[])
         {
-            int arr[] = {10, 7, 8, 9, 1, 5};
+            int arr[] = {10, 7, 33, 9, 1, 47 , 14 , 29};
             int n = arr.length;
 
             System.out.print("Given Array : ");

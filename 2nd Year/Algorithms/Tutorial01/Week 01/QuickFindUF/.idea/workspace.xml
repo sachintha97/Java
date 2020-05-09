@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81df2531-8f28-426a-a107-0a256db51db7" name="Default Changelist" comment="" />
+    <list default="true" id="81df2531-8f28-426a-a107-0a256db51db7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/.idea/libraries/stdlib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../GraphPrintAllPaths/GraphPrintAllPaths.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ThreeSum/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/Week 01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Assignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Assignment/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Assignment/Assignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Assignment/Assignment.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Assignment/out/production/Assignment/MaxFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Assignment/out/production/Assignment/MaxFlow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Assignment/src/MaxFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Assignment/src/MaxFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Merge_Sort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Merge_Sort/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Merge_Sort/out/production/Merge_Sort/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Merge_Sort/out/production/Merge_Sort/MergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Merge_Sort/src/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Merge_Sort/src/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Quick_Sort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Quick_Sort/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Quick_Sort/out/production/Quick_Sort/QuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Quick_Sort/out/production/Quick_Sort/QuickSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Quick_Sort/src/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Quick_Sort/src/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ThreeSum/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ThreeSum/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Assignment 01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Assignment 01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Assignment 01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Assignment 01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Assignment 01/out/production/Assignment 01/Magic_Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Assignment 01/out/production/Assignment 01/Magic_Square.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +34,7 @@
     <option name="done" value="true" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -36,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/QuickFindUF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-86">
-              <caret line="152" column="13" lean-forward="true" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
+            <state relative-caret-position="199">
+              <caret line="167" column="20" selection-start-line="167" selection-start-column="15" selection-end-line="167" selection-end-column="20" />
               <folding>
                 <element signature="e#0#6336#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -50,16 +70,27 @@
         <entry file="file://$PROJECT_DIR$/tinyUF.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/GraphPrinAllPath.java" />
         <option value="$PROJECT_DIR$/src/QuickFindUF.java" />
       </list>
     </option>
@@ -68,18 +99,18 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1048" />
+    <option name="x" value="950" />
+    <option name="y" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectId" id="1WxfjcQEC6nQGhR4Sve6D8rYwUt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -87,10 +118,20 @@
               <item name="QuickFindUF" type="b2602c69:ProjectViewProjectNode" />
               <item name="QuickFindUF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="QuickFindUF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuickFindUF" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuickFindUF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -101,15 +142,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../QuickUnionUF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Assignment" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -124,7 +169,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.QuickFindUF">
+    <configuration name="GraphPrinAllPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GraphPrinAllPath" />
+      <module name="QuickFindUF" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="QuickFindUF" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="QuickFindUF" />
       <module name="QuickFindUF" />
@@ -135,6 +187,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.QuickFindUF" />
+        <item itemvalue="Application.GraphPrinAllPath" />
       </list>
     </recent_temporary>
   </component>
@@ -165,17 +218,20 @@
       <workItem from="1580647275667" duration="9525000" />
       <workItem from="1580659547666" duration="4008000" />
       <workItem from="1580995236820" duration="1385000" />
+      <workItem from="1585379919875" duration="2019000" />
+      <workItem from="1585482863279" duration="807000" />
+      <workItem from="1586009308196" duration="738000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17926000" />
+    <option name="totallyTimeSpent" value="21490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19932885" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -184,7 +240,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.8022923" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.4036827" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -225,6 +281,7 @@
     <state x="1103" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580097383602" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/GraphPrinAllPath.java" />
     <entry file="file://$PROJECT_DIR$/mediumUF.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -237,14 +294,14 @@
     <entry file="file://$PROJECT_DIR$/tinyUF.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/QuickFindUF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="152" column="13" lean-forward="true" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
+        <state relative-caret-position="199">
+          <caret line="167" column="20" selection-start-line="167" selection-start-column="15" selection-end-line="167" selection-end-column="20" />
           <folding>
             <element signature="e#0#6336#0" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -252,5 +309,80 @@
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8 (3)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>QuickFindUF</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>stdlib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
